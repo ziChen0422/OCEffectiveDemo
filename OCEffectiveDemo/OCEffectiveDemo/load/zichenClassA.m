@@ -10,6 +10,15 @@
 
 @implementation zichenClassA
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        NSLog(@"class A init");
+    }
+    return self;
+}
+
 + (void)load
 {
     NSLog(@"class A load");
