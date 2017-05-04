@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046AB1D61EBAFD3A007EEA99 /* zichenClassA+zichen.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB1D51EBAFD3A007EEA99 /* zichenClassA+zichen.m */; };
+		046AB1D91EBB00EA007EEA99 /* zichenClassC.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB1D81EBB00EA007EEA99 /* zichenClassC.m */; };
+		046AB1DC1EBB0105007EEA99 /* zichenClassCChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB1DB1EBB0105007EEA99 /* zichenClassCChild.m */; };
 		04A9EFBC1EB9E39A0028C299 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9EFBB1EB9E39A0028C299 /* main.m */; };
 		04A9EFBF1EB9E39A0028C299 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9EFBE1EB9E39A0028C299 /* AppDelegate.m */; };
 		04A9EFC21EB9E39A0028C299 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9EFC11EB9E39A0028C299 /* ViewController.m */; };
@@ -22,6 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		046AB1D41EBAFD3A007EEA99 /* zichenClassA+zichen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "zichenClassA+zichen.h"; sourceTree = "<group>"; };
+		046AB1D51EBAFD3A007EEA99 /* zichenClassA+zichen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "zichenClassA+zichen.m"; sourceTree = "<group>"; };
+		046AB1D71EBB00EA007EEA99 /* zichenClassC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zichenClassC.h; sourceTree = "<group>"; };
+		046AB1D81EBB00EA007EEA99 /* zichenClassC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zichenClassC.m; sourceTree = "<group>"; };
+		046AB1DA1EBB0105007EEA99 /* zichenClassCChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zichenClassCChild.h; sourceTree = "<group>"; };
+		046AB1DB1EBB0105007EEA99 /* zichenClassCChild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zichenClassCChild.m; sourceTree = "<group>"; };
 		04A9EFB71EB9E39A0028C299 /* OCEffectiveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCEffectiveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A9EFBB1EB9E39A0028C299 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04A9EFBD1EB9E39A0028C299 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,10 +116,16 @@
 				04A9EFD61EB9E4E60028C299 /* loadViewController.m */,
 				04A9EFD81EB9E52F0028C299 /* zichenClassA.h */,
 				04A9EFD91EB9E52F0028C299 /* zichenClassA.m */,
+				046AB1D41EBAFD3A007EEA99 /* zichenClassA+zichen.h */,
+				046AB1D51EBAFD3A007EEA99 /* zichenClassA+zichen.m */,
 				04A9EFDA1EB9E52F0028C299 /* zichenClassB.h */,
 				04A9EFDB1EB9E52F0028C299 /* zichenClassB.m */,
 				04A9EFDC1EB9E52F0028C299 /* zichenClassB+zichen.h */,
 				04A9EFDD1EB9E52F0028C299 /* zichenClassB+zichen.m */,
+				046AB1D71EBB00EA007EEA99 /* zichenClassC.h */,
+				046AB1D81EBB00EA007EEA99 /* zichenClassC.m */,
+				046AB1DA1EBB0105007EEA99 /* zichenClassCChild.h */,
+				046AB1DB1EBB0105007EEA99 /* zichenClassCChild.m */,
 			);
 			path = load;
 			sourceTree = "<group>";
@@ -193,7 +208,10 @@
 				04A9EFDF1EB9E52F0028C299 /* zichenClassB.m in Sources */,
 				04A9EFDE1EB9E52F0028C299 /* zichenClassA.m in Sources */,
 				04A9EFE01EB9E52F0028C299 /* zichenClassB+zichen.m in Sources */,
+				046AB1D61EBAFD3A007EEA99 /* zichenClassA+zichen.m in Sources */,
 				04A9EFE21EB9E5900028C299 /* README.md in Sources */,
+				046AB1DC1EBB0105007EEA99 /* zichenClassCChild.m in Sources */,
+				046AB1D91EBB00EA007EEA99 /* zichenClassC.m in Sources */,
 				04A9EFBF1EB9E39A0028C299 /* AppDelegate.m in Sources */,
 				04A9EFBC1EB9E39A0028C299 /* main.m in Sources */,
 			);
@@ -354,6 +372,7 @@
 				04A9EFD01EB9E39A0028C299 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

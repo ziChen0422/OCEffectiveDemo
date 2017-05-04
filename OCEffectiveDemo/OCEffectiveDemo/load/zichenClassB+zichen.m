@@ -12,12 +12,12 @@
 
 + (void)load
 {
-    NSLog(@"class B category load");
+    NSLog(@"zichenClassB category load");
 }
 
 + (void)initialize
 {
-    NSLog(@"class B category initialize");
+    NSLog(@"zichenClassB category initialize");
 }
 
 @end

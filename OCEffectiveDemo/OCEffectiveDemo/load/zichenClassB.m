@@ -10,14 +10,27 @@
 
 @implementation zichenClassB
 
+/**
+ *  +(void)load, +(void)initialize
+ *  如果在分类中实现的话,会调用分类的,如下两个不输出.
+ */
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        NSLog(@"zichenClassB init");
+    }
+    return self;
+}
+
 + (void)load
 {
-    NSLog(@"class B load");
+    NSLog(@"zichenClassB load");
 }
 
 + (void)initialize
 {
-    NSLog(@"class B initialize");
+    NSLog(@"zichenClassB initialize");
 }
 
 @end

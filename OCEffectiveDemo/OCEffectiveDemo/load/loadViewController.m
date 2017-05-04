@@ -7,9 +7,10 @@
 //
 
 #import "loadViewController.h"
-//#import "zichenClassB.h"
-//#import "zichenClassB+zichen.h"
-#import "zichenClassA.h"
+#import "zichenClassB.h"
+#import "zichenClassB+zichen.h"
+//#import "zichenClassA.h"
+#import "zichenClassCChild.h"
 
 @interface loadViewController ()
 
@@ -20,10 +21,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    //zichenClassB *classB = [zichenClassB new];
-    NSLog(@"/----------------------------/");
-    zichenClassA *classA = [zichenClassA new];
+    NSLog(@"/------------- classA ---------------/");
+    zichenClassA *classA = [[zichenClassA alloc] init];
+    NSLog(@"/------------- classB ---------------/");
+    zichenClassB *classB = [[zichenClassB alloc] init];
+    NSLog(@"/------------- classC ---------------/");
+    zichenClassCChild *child = [[zichenClassCChild alloc] init];
+    NSLog(@"/------- classC initialize ----------/");
+    zichenClassC *classC = [[zichenClassC alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
