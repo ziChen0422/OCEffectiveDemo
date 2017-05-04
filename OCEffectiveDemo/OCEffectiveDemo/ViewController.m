@@ -20,9 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.title = @"Demo";
+    self.title = @"OCEffectiveDemo";
     _controllerArray = @[@{@"loadViewController":@"测试load/initialize"},
-                         ];
+                         @{@"timerViewController":@"测试Timer"}];
     self.view.backgroundColor = [UIColor whiteColor];
     [self createTableView];
 }
@@ -84,8 +84,13 @@
     
     NSDictionary *dic = [_controllerArray objectAtIndex:indexPath.row];
     NSString *className = dic.allKeys[0];
+    NSString *title = dic[className];
     id vc = [[NSClassFromString(className) alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    if ([vc isKindOfClass:[UIViewController class]]) {
+        UIViewController *newVC = (UIViewController *)vc;
+        newVC.navigationItem.title = title;
+        [self.navigationController pushViewController:newVC animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
