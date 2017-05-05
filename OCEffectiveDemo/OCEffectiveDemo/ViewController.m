@@ -20,11 +20,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.title = @"OCEffectiveDemo";
-    _controllerArray = @[@{@"loadViewController":@"测试load/initialize"},
-                         @{@"timerViewController":@"测试Timer"},
-                         @{@"MemoryViewController":@"Memory要点"},
-                         @{@"importViewController":@"import向前声明"}];
+    self.title = @"OCEffectiveDemo 52个有效方法";
+    _controllerArray = @[@{@"MemoryViewController":@"(1)Memory要点"},
+                         @{@"importViewController":@"(2)import向前声明"},
+                         @{@"FoundationViewController":@"(3)字面量语法"},
+                         @{@"loadViewController":@"(51)测试load/initialize"},
+                         @{@"timerViewController":@"(52)测试Timer"}];
     self.view.backgroundColor = [UIColor whiteColor];
     [self createTableView];
 }
