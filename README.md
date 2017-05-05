@@ -5,3 +5,5 @@
 `+(void)load +(void)initialize -(void)init`
 
 ##### (2), `NSTimer` 保留环(循环引用)研究。
+##### (3), `Memory` OC对象内存要点。
+##### (3), `import` 向前声明要点。

@@ -26,6 +26,8 @@
 		04A9EFDF1EB9E52F0028C299 /* zichenClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9EFDB1EB9E52F0028C299 /* zichenClassB.m */; };
 		04A9EFE01EB9E52F0028C299 /* zichenClassB+zichen.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9EFDD1EB9E52F0028C299 /* zichenClassB+zichen.m */; };
 		04A9EFE21EB9E5900028C299 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 04A9EFE11EB9E5900028C299 /* README.md */; };
+		04B12B821EBC22DE004FAF37 /* MemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B12B811EBC22DE004FAF37 /* MemoryViewController.m */; };
+		04B12B861EBC452B004FAF37 /* importViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B12B851EBC452B004FAF37 /* importViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,10 @@
 		04A9EFDC1EB9E52F0028C299 /* zichenClassB+zichen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "zichenClassB+zichen.h"; sourceTree = "<group>"; };
 		04A9EFDD1EB9E52F0028C299 /* zichenClassB+zichen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "zichenClassB+zichen.m"; sourceTree = "<group>"; };
 		04A9EFE11EB9E5900028C299 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		04B12B801EBC22DE004FAF37 /* MemoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryViewController.h; sourceTree = "<group>"; };
+		04B12B811EBC22DE004FAF37 /* MemoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryViewController.m; sourceTree = "<group>"; };
+		04B12B841EBC452B004FAF37 /* importViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = importViewController.h; sourceTree = "<group>"; };
+		04B12B851EBC452B004FAF37 /* importViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = importViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,8 @@
 		04A9EFB91EB9E39A0028C299 /* OCEffectiveDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04B12B831EBC4515004FAF37 /* import */,
+				04B12B7F1EBC22C5004FAF37 /* Memory */,
 				046AB1DD1EBB1620007EEA99 /* timer */,
 				04A9EFE11EB9E5900028C299 /* README.md */,
 				04A9EFD11EB9E49E0028C299 /* load */,
@@ -156,6 +164,24 @@
 				046AB1DB1EBB0105007EEA99 /* zichenClassCChild.m */,
 			);
 			path = load;
+			sourceTree = "<group>";
+		};
+		04B12B7F1EBC22C5004FAF37 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				04B12B801EBC22DE004FAF37 /* MemoryViewController.h */,
+				04B12B811EBC22DE004FAF37 /* MemoryViewController.m */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		04B12B831EBC4515004FAF37 /* import */ = {
+			isa = PBXGroup;
+			children = (
+				04B12B841EBC452B004FAF37 /* importViewController.h */,
+				04B12B851EBC452B004FAF37 /* importViewController.m */,
+			);
+			path = import;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +259,7 @@
 				04A9EFC21EB9E39A0028C299 /* ViewController.m in Sources */,
 				04A9EFD41EB9E4C50028C299 /* BaseViewController.m in Sources */,
 				04A9EFD71EB9E4E60028C299 /* loadViewController.m in Sources */,
+				04B12B861EBC452B004FAF37 /* importViewController.m in Sources */,
 				046AB1EC1EBB2D62007EEA99 /* factorylabelHandle.m in Sources */,
 				046AB1E01EBB1635007EEA99 /* timerViewController.m in Sources */,
 				04A9EFDF1EB9E52F0028C299 /* zichenClassB.m in Sources */,
@@ -245,6 +272,7 @@
 				046AB1D91EBB00EA007EEA99 /* zichenClassC.m in Sources */,
 				04A9EFBF1EB9E39A0028C299 /* AppDelegate.m in Sources */,
 				04A9EFBC1EB9E39A0028C299 /* main.m in Sources */,
+				04B12B821EBC22DE004FAF37 /* MemoryViewController.m in Sources */,
 				046AB1E31EBB1DD0007EEA99 /* TimerHandle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

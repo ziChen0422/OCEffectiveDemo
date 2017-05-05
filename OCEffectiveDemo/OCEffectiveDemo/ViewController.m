@@ -22,7 +22,9 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"OCEffectiveDemo";
     _controllerArray = @[@{@"loadViewController":@"测试load/initialize"},
-                         @{@"timerViewController":@"测试Timer"}];
+                         @{@"timerViewController":@"测试Timer"},
+                         @{@"MemoryViewController":@"Memory要点"},
+                         @{@"importViewController":@"import向前声明"}];
     self.view.backgroundColor = [UIColor whiteColor];
     [self createTableView];
 }
