@@ -29,6 +29,7 @@
 		04B12B821EBC22DE004FAF37 /* MemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B12B811EBC22DE004FAF37 /* MemoryViewController.m */; };
 		04B12B861EBC452B004FAF37 /* importViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B12B851EBC452B004FAF37 /* importViewController.m */; };
 		04B12B8A1EBC54CD004FAF37 /* FoundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B12B891EBC54CD004FAF37 /* FoundationViewController.m */; };
+		20F304901EC0BF0500BA1112 /* const in Resources */ = {isa = PBXBuildFile; fileRef = 20F3048F1EC0BF0500BA1112 /* const */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,8 @@
 		04B12B851EBC452B004FAF37 /* importViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = importViewController.m; sourceTree = "<group>"; };
 		04B12B881EBC54CD004FAF37 /* FoundationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationViewController.h; sourceTree = "<group>"; };
 		04B12B891EBC54CD004FAF37 /* FoundationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundationViewController.m; sourceTree = "<group>"; };
+		20F3048F1EC0BF0500BA1112 /* const */ = {isa = PBXFileReference; lastKnownFileType = folder; path = const; sourceTree = "<group>"; };
+		20F304911EC0BF7200BA1112 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,7 @@
 		04A9EFB91EB9E39A0028C299 /* OCEffectiveDemo */ = {
 			isa = PBXGroup;
 			children = (
+				20F3048F1EC0BF0500BA1112 /* const */,
 				04B12B871EBC54BD004FAF37 /* foundation */,
 				04B12B831EBC4515004FAF37 /* import */,
 				04B12B7F1EBC22C5004FAF37 /* Memory */,
@@ -145,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				04A9EFBB1EB9E39A0028C299 /* main.m */,
+				20F304911EC0BF7200BA1112 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F304901EC0BF0500BA1112 /* const in Resources */,
 				04A9EFCA1EB9E39A0028C299 /* LaunchScreen.storyboard in Resources */,
 				04A9EFC71EB9E39A0028C299 /* Assets.xcassets in Resources */,
 				04A9EFC51EB9E39A0028C299 /* Main.storyboard in Resources */,

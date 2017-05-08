@@ -24,6 +24,7 @@
     _controllerArray = @[@{@"MemoryViewController":@"(1)Memory要点"},
                          @{@"importViewController":@"(2)import向前声明"},
                          @{@"FoundationViewController":@"(3)字面量语法"},
+                         @{@"constViewController":@"static/const用法"},
                          @{@"loadViewController":@"(51)测试load/initialize"},
                          @{@"timerViewController":@"(52)测试Timer"}];
     self.view.backgroundColor = [UIColor whiteColor];
