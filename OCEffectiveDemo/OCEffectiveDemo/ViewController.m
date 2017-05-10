@@ -24,9 +24,11 @@
     _controllerArray = @[@{@"MemoryViewController":@"(1)Memory要点"},
                          @{@"importViewController":@"(2)import向前声明"},
                          @{@"FoundationViewController":@"(3)字面量语法"},
-                         @{@"constViewController":@"static/const用法"},
+                         @{@"constViewController":@"(4)static/const用法"},
+                         @{@"enumViewController":@"(5)enum用法"},
                          @{@"loadViewController":@"(51)测试load/initialize"},
-                         @{@"timerViewController":@"(52)测试Timer"}];
+                         @{@"timerViewController":@"(52)测试Timer"},
+                         @{@"TipsViewController":@"(100)项目中遇到的小细节"}];
     self.view.backgroundColor = [UIColor whiteColor];
     [self createTableView];
 }
@@ -38,6 +40,8 @@
     _effectiveTbv.delegate = self;
     _effectiveTbv.dataSource = self;
     _effectiveTbv.backgroundColor = [UIColor whiteColor];
+    _effectiveTbv.estimatedRowHeight = 55;
+    _effectiveTbv.rowHeight = 55;
     if ([_effectiveTbv respondsToSelector:@selector(setSeparatorInset:)]) {
         [_effectiveTbv setSeparatorInset:UIEdgeInsetsZero];
     }
@@ -54,14 +58,9 @@
     return [_controllerArray count];
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 60;
-}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *controllStr = @"controllerStr";
+    static NSString *controllStr = @"effectiveCell";
     UITableViewCell *cell;
     cell = [tableView dequeueReusableCellWithIdentifier:controllStr];
     if (cell == nil) {

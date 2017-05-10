@@ -5,7 +5,9 @@
 ##### (2), `import` 向前声明要点。
 ##### (3), 多用字面量语法, 少用与之等价的方法。
 ##### (4), `static`,`const`用法。
+##### (5), `enum` 枚举用法。
 ##### (51),`+(void)load` 和 `+(void)initialize` 在基础类和类别中的探讨 <br>
 `+(void)load +(void)initialize -(void)init`
 
 ##### (52), `NSTimer` 保留环(循环引用)研究。
+##### (100), 项目中遇到的小细节。
