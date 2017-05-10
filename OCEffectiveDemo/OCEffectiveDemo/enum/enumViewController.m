@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    NSString *tips = @"(1),";
+    NSString *tips = @"(1),应该用枚举来表示状态机的状态,";
     
     UILabel *tipslabel = [factorylabelHandle createLabelwithTips:tips];
     [self.view addSubview:tipslabel];
