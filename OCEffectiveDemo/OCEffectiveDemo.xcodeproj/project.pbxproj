@@ -31,6 +31,7 @@
 		04A9EFDF1EB9E52F0028C299 /* zichenClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9EFDB1EB9E52F0028C299 /* zichenClassB.m */; };
 		04A9EFE01EB9E52F0028C299 /* zichenClassB+zichen.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9EFDD1EB9E52F0028C299 /* zichenClassB+zichen.m */; };
 		04A9EFE21EB9E5900028C299 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 04A9EFE11EB9E5900028C299 /* README.md */; };
+		04AFD5961ECB0F8D009DA445 /* propertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AFD5951ECB0F8D009DA445 /* propertyViewController.m */; };
 		04B12B821EBC22DE004FAF37 /* MemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B12B811EBC22DE004FAF37 /* MemoryViewController.m */; };
 		04B12B861EBC452B004FAF37 /* importViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B12B851EBC452B004FAF37 /* importViewController.m */; };
 		04B12B8A1EBC54CD004FAF37 /* FoundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B12B891EBC54CD004FAF37 /* FoundationViewController.m */; };
@@ -81,6 +82,8 @@
 		04A9EFDC1EB9E52F0028C299 /* zichenClassB+zichen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "zichenClassB+zichen.h"; sourceTree = "<group>"; };
 		04A9EFDD1EB9E52F0028C299 /* zichenClassB+zichen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "zichenClassB+zichen.m"; sourceTree = "<group>"; };
 		04A9EFE11EB9E5900028C299 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		04AFD5941ECB0F8D009DA445 /* propertyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = propertyViewController.h; sourceTree = "<group>"; };
+		04AFD5951ECB0F8D009DA445 /* propertyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = propertyViewController.m; sourceTree = "<group>"; };
 		04B12B801EBC22DE004FAF37 /* MemoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryViewController.h; sourceTree = "<group>"; };
 		04B12B811EBC22DE004FAF37 /* MemoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryViewController.m; sourceTree = "<group>"; };
 		04B12B841EBC452B004FAF37 /* importViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = importViewController.h; sourceTree = "<group>"; };
@@ -171,6 +174,7 @@
 		04A9EFB91EB9E39A0028C299 /* OCEffectiveDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04AFD5931ECB0F7A009DA445 /* property */,
 				048E8C8E1EC315C700D59967 /* const */,
 				048E8C7B1EC2FCAA00D59967 /* Tips */,
 				048E8C761EC2F91200D59967 /* enum */,
@@ -225,6 +229,15 @@
 				046AB1DB1EBB0105007EEA99 /* zichenClassCChild.m */,
 			);
 			path = load;
+			sourceTree = "<group>";
+		};
+		04AFD5931ECB0F7A009DA445 /* property */ = {
+			isa = PBXGroup;
+			children = (
+				04AFD5941ECB0F8D009DA445 /* propertyViewController.h */,
+				04AFD5951ECB0F8D009DA445 /* propertyViewController.m */,
+			);
+			path = property;
 			sourceTree = "<group>";
 		};
 		04B12B7F1EBC22C5004FAF37 /* Memory */ = {
@@ -348,6 +361,7 @@
 				04A9EFBC1EB9E39A0028C299 /* main.m in Sources */,
 				04B12B821EBC22DE004FAF37 /* MemoryViewController.m in Sources */,
 				046AB1E31EBB1DD0007EEA99 /* TimerHandle.m in Sources */,
+				04AFD5961ECB0F8D009DA445 /* propertyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
