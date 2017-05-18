@@ -27,6 +27,7 @@
                          @{@"constViewController":@"(4)static/const用法"},
                          @{@"enumViewController":@"(5)enum用法"},
                          @{@"propertyViewController":@"(6)理解property属性"},
+                         @{@"InstancevarViewController":@"(6)对象直接访问实例变量"},
                          @{@"loadViewController":@"(51)测试load/initialize"},
                          @{@"timerViewController":@"(52)测试Timer"},
                          @{@"TipsViewController":@"(100)项目中遇到的小细节"}];

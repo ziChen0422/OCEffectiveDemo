@@ -7,6 +7,7 @@
 ##### (4), `static`,`const`用法。
 ##### (5), `enum` 枚举用法。
 ##### (6), 理解`property` 属性。
+##### (7), 在对象内部尽量直接访问实例变量。
 ##### (51),`+(void)load` 和 `+(void)initialize` 在基础类和类别中的探讨 <br>
 `+(void)load +(void)initialize -(void)init`
 
