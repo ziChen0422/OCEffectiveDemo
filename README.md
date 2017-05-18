@@ -10,6 +10,5 @@
 ##### (7), 在对象内部尽量直接访问实例变量。
 ##### (51),`+(void)load` 和 `+(void)initialize` 在基础类和类别中的探讨 <br>
 `+(void)load +(void)initialize -(void)init`
-
 ##### (52), `NSTimer` 保留环(循环引用)研究。
 ##### (100), 项目中遇到的小细节。
