@@ -36,6 +36,9 @@
 		04B12B861EBC452B004FAF37 /* importViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B12B851EBC452B004FAF37 /* importViewController.m */; };
 		04B12B8A1EBC54CD004FAF37 /* FoundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B12B891EBC54CD004FAF37 /* FoundationViewController.m */; };
 		04CDAC5F1ECDB0740091DB93 /* InstancevarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDAC5E1ECDB0740091DB93 /* InstancevarViewController.m */; };
+		04EBF2291EE52C8C008F5C33 /* objcforwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EBF2281EE52C8C008F5C33 /* objcforwardViewController.m */; };
+		04EBF22C1EE52CCF008F5C33 /* forwardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EBF22B1EE52CCF008F5C33 /* forwardModel.m */; };
+		C6B64BC05CD23A5FA8A046D3 /* libPods-OCEffectiveDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 435826443595D7F0B24C2E2F /* libPods-OCEffectiveDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +96,13 @@
 		04B12B891EBC54CD004FAF37 /* FoundationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundationViewController.m; sourceTree = "<group>"; };
 		04CDAC5D1ECDB0740091DB93 /* InstancevarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstancevarViewController.h; sourceTree = "<group>"; };
 		04CDAC5E1ECDB0740091DB93 /* InstancevarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstancevarViewController.m; sourceTree = "<group>"; };
+		04EBF2271EE52C8C008F5C33 /* objcforwardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcforwardViewController.h; sourceTree = "<group>"; };
+		04EBF2281EE52C8C008F5C33 /* objcforwardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = objcforwardViewController.m; sourceTree = "<group>"; };
+		04EBF22A1EE52CCF008F5C33 /* forwardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forwardModel.h; sourceTree = "<group>"; };
+		04EBF22B1EE52CCF008F5C33 /* forwardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = forwardModel.m; sourceTree = "<group>"; };
+		38A888ED2DCC08C1E6973972 /* Pods-OCEffectiveDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCEffectiveDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCEffectiveDemo/Pods-OCEffectiveDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		435826443595D7F0B24C2E2F /* libPods-OCEffectiveDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCEffectiveDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B3F1D4792D7F8B9C34B6D5A /* Pods-OCEffectiveDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCEffectiveDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCEffectiveDemo/Pods-OCEffectiveDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,7 @@
 			files = (
 				048E8C8C1EC30BAC00D59967 /* MediaPlayer.framework in Frameworks */,
 				048E8C8A1EC30BA300D59967 /* AVFoundation.framework in Frameworks */,
+				C6B64BC05CD23A5FA8A046D3 /* libPods-OCEffectiveDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +155,7 @@
 			children = (
 				048E8C8B1EC30BAC00D59967 /* MediaPlayer.framework */,
 				048E8C891EC30BA300D59967 /* AVFoundation.framework */,
+				435826443595D7F0B24C2E2F /* libPods-OCEffectiveDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,6 +175,7 @@
 				04A9EFB91EB9E39A0028C299 /* OCEffectiveDemo */,
 				04A9EFB81EB9E39A0028C299 /* Products */,
 				048E8C881EC30BA300D59967 /* Frameworks */,
+				1506503CCB594A2BAE909395 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +190,7 @@
 		04A9EFB91EB9E39A0028C299 /* OCEffectiveDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04EBF2261EE52C6A008F5C33 /* runtimeForward */,
 				04CDAC5C1ECDB05D0091DB93 /* instanceVar */,
 				04AFD5931ECB0F7A009DA445 /* property */,
 				048E8C8E1EC315C700D59967 /* const */,
@@ -280,6 +294,26 @@
 			path = instanceVar;
 			sourceTree = "<group>";
 		};
+		04EBF2261EE52C6A008F5C33 /* runtimeForward */ = {
+			isa = PBXGroup;
+			children = (
+				04EBF2271EE52C8C008F5C33 /* objcforwardViewController.h */,
+				04EBF2281EE52C8C008F5C33 /* objcforwardViewController.m */,
+				04EBF22A1EE52CCF008F5C33 /* forwardModel.h */,
+				04EBF22B1EE52CCF008F5C33 /* forwardModel.m */,
+			);
+			path = runtimeForward;
+			sourceTree = "<group>";
+		};
+		1506503CCB594A2BAE909395 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38A888ED2DCC08C1E6973972 /* Pods-OCEffectiveDemo.debug.xcconfig */,
+				6B3F1D4792D7F8B9C34B6D5A /* Pods-OCEffectiveDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -287,9 +321,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04A9EFCE1EB9E39A0028C299 /* Build configuration list for PBXNativeTarget "OCEffectiveDemo" */;
 			buildPhases = (
+				3C6FBD0FD9FF3698CBAE0E64 /* [CP] Check Pods Manifest.lock */,
 				04A9EFB31EB9E39A0028C299 /* Sources */,
 				04A9EFB41EB9E39A0028C299 /* Frameworks */,
 				04A9EFB51EB9E39A0028C299 /* Resources */,
+				75E1EF1893714FFE3EE511A1 /* [CP] Embed Pods Frameworks */,
+				0029C46F58FE616DC5699E00 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -347,6 +384,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0029C46F58FE616DC5699E00 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCEffectiveDemo/Pods-OCEffectiveDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C6FBD0FD9FF3698CBAE0E64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		75E1EF1893714FFE3EE511A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCEffectiveDemo/Pods-OCEffectiveDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04A9EFB31EB9E39A0028C299 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -359,6 +444,7 @@
 				04A9EFD71EB9E4E60028C299 /* loadViewController.m in Sources */,
 				04B12B861EBC452B004FAF37 /* importViewController.m in Sources */,
 				046AB1EC1EBB2D62007EEA99 /* factorylabelHandle.m in Sources */,
+				04EBF2291EE52C8C008F5C33 /* objcforwardViewController.m in Sources */,
 				046AB1E01EBB1635007EEA99 /* timerViewController.m in Sources */,
 				04A9EFDF1EB9E52F0028C299 /* zichenClassB.m in Sources */,
 				04A9EFDE1EB9E52F0028C299 /* zichenClassA.m in Sources */,
@@ -374,6 +460,7 @@
 				04A9EFBF1EB9E39A0028C299 /* AppDelegate.m in Sources */,
 				04A9EFBC1EB9E39A0028C299 /* main.m in Sources */,
 				04B12B821EBC22DE004FAF37 /* MemoryViewController.m in Sources */,
+				04EBF22C1EE52CCF008F5C33 /* forwardModel.m in Sources */,
 				046AB1E31EBB1DD0007EEA99 /* TimerHandle.m in Sources */,
 				04AFD5961ECB0F8D009DA445 /* propertyViewController.m in Sources */,
 			);
@@ -497,6 +584,7 @@
 		};
 		04A9EFCF1EB9E39A0028C299 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38A888ED2DCC08C1E6973972 /* Pods-OCEffectiveDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W222R58V26;
@@ -512,6 +600,7 @@
 		};
 		04A9EFD01EB9E39A0028C299 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B3F1D4792D7F8B9C34B6D5A /* Pods-OCEffectiveDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W222R58V26;

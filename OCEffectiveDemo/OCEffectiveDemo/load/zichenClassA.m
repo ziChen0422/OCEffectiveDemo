@@ -8,6 +8,12 @@
 
 #import "zichenClassA.h"
 
+static NSMutableArray *_nArr;
+
+@interface zichenClassA ()
+
+@end
+
 @implementation zichenClassA
 
 - (instancetype)init
@@ -15,6 +21,10 @@
     self = [super init];
     if (self) {
         NSLog(@"zichenClassA init");
+        if (!_nArr) {
+            _nArr = [NSMutableArray new];
+            NSLog(@"init Arr");
+        }
     }
     return self;
 }
@@ -36,6 +46,19 @@
 + (void)initialize
 {
     NSLog(@"zichenClassA initialize");
+    if (!_nArr) {
+        _nArr = [NSMutableArray new];
+        NSLog(@"initialize Arr");
+    }
+}
+
++ (void)zichenTest
+{
+    NSLog(@"zichen test");
+    if (!_nArr) {
+        _nArr = [NSMutableArray new];
+        NSLog(@"zichenTest Arr");
+    }
 }
 
 @end

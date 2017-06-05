@@ -10,4 +10,6 @@
 
 @interface zichenClassA : NSObject
 
++ (void)zichenTest;
+
 @end

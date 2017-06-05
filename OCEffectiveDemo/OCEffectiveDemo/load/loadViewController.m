@@ -23,7 +23,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSLog(@"/------------- classA ---------------/");
-    zichenClassA *classA = [[zichenClassA alloc] init];
+    //zichenClassA *classA = [[zichenClassA alloc] init];
+    [zichenClassA zichenTest];
+    //zichenClassA *classA = [[zichenClassA alloc] init];
     NSLog(@"/------------- classB ---------------/");
     zichenClassB *classB = [[zichenClassB alloc] init];
     NSLog(@"/------------- classC ---------------/");
