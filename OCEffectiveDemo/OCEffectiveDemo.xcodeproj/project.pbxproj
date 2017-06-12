@@ -38,6 +38,7 @@
 		04CDAC5F1ECDB0740091DB93 /* InstancevarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDAC5E1ECDB0740091DB93 /* InstancevarViewController.m */; };
 		04EBF2291EE52C8C008F5C33 /* objcforwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EBF2281EE52C8C008F5C33 /* objcforwardViewController.m */; };
 		04EBF22C1EE52CCF008F5C33 /* forwardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EBF22B1EE52CCF008F5C33 /* forwardModel.m */; };
+		2051A8071EEEEB1600700E4A /* OCENavigaitonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2051A8061EEEEB1600700E4A /* OCENavigaitonController.m */; };
 		C6B64BC05CD23A5FA8A046D3 /* libPods-OCEffectiveDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 435826443595D7F0B24C2E2F /* libPods-OCEffectiveDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,8 @@
 		04EBF2281EE52C8C008F5C33 /* objcforwardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = objcforwardViewController.m; sourceTree = "<group>"; };
 		04EBF22A1EE52CCF008F5C33 /* forwardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forwardModel.h; sourceTree = "<group>"; };
 		04EBF22B1EE52CCF008F5C33 /* forwardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = forwardModel.m; sourceTree = "<group>"; };
+		2051A8051EEEEB1600700E4A /* OCENavigaitonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCENavigaitonController.h; sourceTree = "<group>"; };
+		2051A8061EEEEB1600700E4A /* OCENavigaitonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCENavigaitonController.m; sourceTree = "<group>"; };
 		38A888ED2DCC08C1E6973972 /* Pods-OCEffectiveDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCEffectiveDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCEffectiveDemo/Pods-OCEffectiveDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		435826443595D7F0B24C2E2F /* libPods-OCEffectiveDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCEffectiveDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B3F1D4792D7F8B9C34B6D5A /* Pods-OCEffectiveDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCEffectiveDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCEffectiveDemo/Pods-OCEffectiveDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +211,8 @@
 				04A9EFC11EB9E39A0028C299 /* ViewController.m */,
 				04A9EFD21EB9E4C50028C299 /* BaseViewController.h */,
 				04A9EFD31EB9E4C50028C299 /* BaseViewController.m */,
+				2051A8051EEEEB1600700E4A /* OCENavigaitonController.h */,
+				2051A8061EEEEB1600700E4A /* OCENavigaitonController.m */,
 				046AB1EA1EBB2D62007EEA99 /* factorylabelHandle.h */,
 				046AB1EB1EBB2D62007EEA99 /* factorylabelHandle.m */,
 				04A9EFC31EB9E39A0028C299 /* Main.storyboard */,
@@ -348,7 +353,7 @@
 				TargetAttributes = {
 					04A9EFB61EB9E39A0028C299 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = W222R58V26;
+						DevelopmentTeam = 724G5A33NB;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -454,6 +459,7 @@
 				04A9EFE21EB9E5900028C299 /* README.md in Sources */,
 				048E8C791EC2F92B00D59967 /* enumViewController.m in Sources */,
 				046AB1E91EBB264D007EEA99 /* NSTimer+zichen.m in Sources */,
+				2051A8071EEEEB1600700E4A /* OCENavigaitonController.m in Sources */,
 				046AB1DC1EBB0105007EEA99 /* zichenClassCChild.m in Sources */,
 				046AB1D91EBB00EA007EEA99 /* zichenClassC.m in Sources */,
 				04B12B8A1EBC54CD004FAF37 /* FoundationViewController.m in Sources */,
@@ -587,11 +593,12 @@
 			baseConfigurationReference = 38A888ED2DCC08C1E6973972 /* Pods-OCEffectiveDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = W222R58V26;
+				DEVELOPMENT_TEAM = 724G5A33NB;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OCEffectiveDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = OCEffectiveDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zichen0422.OCEffectiveDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -603,11 +610,12 @@
 			baseConfigurationReference = 6B3F1D4792D7F8B9C34B6D5A /* Pods-OCEffectiveDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = W222R58V26;
+				DEVELOPMENT_TEAM = 724G5A33NB;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OCEffectiveDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = OCEffectiveDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zichen0422.OCEffectiveDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
