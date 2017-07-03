@@ -55,6 +55,7 @@
     btn.layer.cornerRadius = 5;
     btn.layer.masksToBounds = YES;
     [btn setTitle:@"Test" forState:UIControlStateNormal];
+    [btn setImage:[UIImage imageNamed:@"check"] forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(testforwordAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
