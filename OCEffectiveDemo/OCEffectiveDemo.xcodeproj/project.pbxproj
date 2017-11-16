@@ -19,6 +19,9 @@
 		048E8C8A1EC30BA300D59967 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048E8C891EC30BA300D59967 /* AVFoundation.framework */; };
 		048E8C8C1EC30BAC00D59967 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048E8C8B1EC30BAC00D59967 /* MediaPlayer.framework */; };
 		048E8C911EC315C700D59967 /* constViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048E8C901EC315C700D59967 /* constViewController.m */; };
+		04A249AE1FBD902300DA2608 /* AFNetworkingDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A249AD1FBD902300DA2608 /* AFNetworkingDemo.m */; };
+		04A249B11FBD90C100DA2608 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A249B01FBD90B400DA2608 /* CFNetwork.framework */; };
+		04A249B21FBD90D100DA2608 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A249AF1FBD90A700DA2608 /* CoreFoundation.framework */; };
 		04A9EFBC1EB9E39A0028C299 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9EFBB1EB9E39A0028C299 /* main.m */; };
 		04A9EFBF1EB9E39A0028C299 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9EFBE1EB9E39A0028C299 /* AppDelegate.m */; };
 		04A9EFC21EB9E39A0028C299 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9EFC11EB9E39A0028C299 /* ViewController.m */; };
@@ -66,6 +69,10 @@
 		048E8C8B1EC30BAC00D59967 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		048E8C8F1EC315C700D59967 /* constViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constViewController.h; sourceTree = "<group>"; };
 		048E8C901EC315C700D59967 /* constViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = constViewController.m; sourceTree = "<group>"; };
+		04A249AC1FBD902300DA2608 /* AFNetworkingDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingDemo.h; sourceTree = "<group>"; };
+		04A249AD1FBD902300DA2608 /* AFNetworkingDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingDemo.m; sourceTree = "<group>"; };
+		04A249AF1FBD90A700DA2608 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		04A249B01FBD90B400DA2608 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		04A9EFB71EB9E39A0028C299 /* OCEffectiveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCEffectiveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A9EFBB1EB9E39A0028C299 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04A9EFBD1EB9E39A0028C299 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -113,6 +120,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A249B21FBD90D100DA2608 /* CoreFoundation.framework in Frameworks */,
+				04A249B11FBD90C100DA2608 /* CFNetwork.framework in Frameworks */,
 				048E8C8C1EC30BAC00D59967 /* MediaPlayer.framework in Frameworks */,
 				048E8C8A1EC30BA300D59967 /* AVFoundation.framework in Frameworks */,
 				C6B64BC05CD23A5FA8A046D3 /* libPods-OCEffectiveDemo.a in Frameworks */,
@@ -156,6 +165,8 @@
 		048E8C881EC30BA300D59967 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04A249B01FBD90B400DA2608 /* CFNetwork.framework */,
+				04A249AF1FBD90A700DA2608 /* CoreFoundation.framework */,
 				048E8C8B1EC30BAC00D59967 /* MediaPlayer.framework */,
 				048E8C891EC30BA300D59967 /* AVFoundation.framework */,
 				435826443595D7F0B24C2E2F /* libPods-OCEffectiveDemo.a */,
@@ -170,6 +181,15 @@
 				048E8C901EC315C700D59967 /* constViewController.m */,
 			);
 			path = const;
+			sourceTree = "<group>";
+		};
+		04A249AB1FBD900E00DA2608 /* AFNetworkingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				04A249AC1FBD902300DA2608 /* AFNetworkingDemo.h */,
+				04A249AD1FBD902300DA2608 /* AFNetworkingDemo.m */,
+			);
+			path = AFNetworkingDemo;
 			sourceTree = "<group>";
 		};
 		04A9EFAE1EB9E39A0028C299 = {
@@ -193,6 +213,7 @@
 		04A9EFB91EB9E39A0028C299 /* OCEffectiveDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04A249AB1FBD900E00DA2608 /* AFNetworkingDemo */,
 				04EBF2261EE52C6A008F5C33 /* runtimeForward */,
 				04CDAC5C1ECDB05D0091DB93 /* instanceVar */,
 				04AFD5931ECB0F7A009DA445 /* property */,
@@ -411,13 +432,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCEffectiveDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		75E1EF1893714FFE3EE511A1 /* [CP] Embed Pods Frameworks */ = {
@@ -459,6 +483,7 @@
 				04A9EFE21EB9E5900028C299 /* README.md in Sources */,
 				048E8C791EC2F92B00D59967 /* enumViewController.m in Sources */,
 				046AB1E91EBB264D007EEA99 /* NSTimer+zichen.m in Sources */,
+				04A249AE1FBD902300DA2608 /* AFNetworkingDemo.m in Sources */,
 				2051A8071EEEEB1600700E4A /* OCENavigaitonController.m in Sources */,
 				046AB1DC1EBB0105007EEA99 /* zichenClassCChild.m in Sources */,
 				046AB1D91EBB00EA007EEA99 /* zichenClassC.m in Sources */,

@@ -6,6 +6,7 @@ target 'OCEffectiveDemo' do
   # use_frameworks!
 	pod 'MBProgressHUD'
 	pod 'ReactiveObjC'
+    pod 'AFNetworking'
   # Pods for OCEffectiveDemo
 
 end

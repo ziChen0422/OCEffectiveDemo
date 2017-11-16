@@ -31,7 +31,8 @@
                          @{@"loadViewController":@"(51)测试load/initialize"},
                          @{@"timerViewController":@"(52)测试Timer"},
                          @{@"TipsViewController":@"(100)项目中遇到的小细节"},
-                         @{@"objcforwardViewController":@"(101)消息转发"}];
+                         @{@"objcforwardViewController":@"(101)消息转发"},
+                         @{@"AFNetworkingDemo":@"(102)AFNetworkingDemo"}];
     self.view.backgroundColor = [UIColor whiteColor];
     [self createTableView];
 }
